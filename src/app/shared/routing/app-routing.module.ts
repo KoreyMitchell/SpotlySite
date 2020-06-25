@@ -21,7 +21,12 @@ const routes: Routes = [
   { path: 'verify-email-address', component: VerifyEmailComponent },
   { path: 'home', component: HomeComponent },
   { path: 'test', component: TestComponent, canActivate: [AuthGuard]},
-  { path: 'start', component: HomeComponent }
+  { path: 'start', component: HomeComponent },
+  {
+    path        : '**',
+    pathMatch   : 'full',
+    component   : HomeComponent
+}
 ];
 
 @NgModule({
