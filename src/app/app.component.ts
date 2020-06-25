@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'spotlysite';
   openSiderbar() {
-    alert("y");
+ 
     var sidebar = document.getElementById("sidebar");
     sidebar.style.display = "block !important";
   }
