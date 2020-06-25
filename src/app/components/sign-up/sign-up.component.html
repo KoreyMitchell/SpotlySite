@@ -1,14 +1,15 @@
+<div id="particles-js"></div>
 <div class="displayTable">
   <div class="displayTableCell">
 
-    <div class="px-logo">
+    <!-- <div class="px-logo">
       <a href="https://www.positronx.io" target="_blank">
         <img src="https://www.positronx.io/wp-content/themes/positronx/img/logo-positronx-white.svg" alt="positronX.io - Learn Full Stack Development">
       </a>
-    </div>
+    </div> -->
 
     <div class="authBlock">
-      <h3>Sign Up</h3>
+      <h3 style="font-size: 36px;letter-spacing: 1px;padding-bottom: 15px;">Join the Spotly Network</h3>
 
       <div class="formGroup">
         <input type="email" class="formControl" placeholder="Email Address" #userEmail required>
@@ -22,9 +23,9 @@
         <input type="button" class="btn btnPrimary" value="Sign Up" (click)="authService.SignUp(userEmail.value, userPwd.value)">
       </div>
 
-      <div class="formGroup">
+      <!-- <div class="formGroup">
         <span class="or"><span class="orInner">Or</span></span>
-      </div>
+      </div> -->
 
       <!-- Continue with Google -->
       <div class="formGroup">

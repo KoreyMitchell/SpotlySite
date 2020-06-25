@@ -1,0 +1,12 @@
+.linkText {
+    text-decoration: none;
+}
+
+.linkText:hover {
+    color: white;
+    opacity: 100%;
+}
+
+.slides {
+    font-family: 'Inter', sans-serif;
+  }

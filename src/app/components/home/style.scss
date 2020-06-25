@@ -1,0 +1,166 @@
+
+// $black: #343c41;
+// $white: #ffffff;
+// $blue: #1b9cfc;
+// $green: #53ce67;
+
+// * {
+//   box-sizing: border-box;
+// }
+
+// body {  
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   min-height: 100vh;
+//   font-family: 'Lato', sans-serif;
+//   background: url('https://user-images.githubusercontent.com/23297041/54643510-2196c180-4aa8-11e9-9d98-06c2bdc59761.png');
+//   background-size: cover;
+// }
+
+// img {
+//   max-width: 100%;
+//   height: auto;
+// }
+
+// p {
+//   margin: 12px 0;
+// }
+
+// .heading {
+//   font-size: 42px;
+//   font-weight: 700;
+//   color: $black;
+// }
+
+// .subheading {
+//   font-size: 18px;
+//   line-height: 24px;
+//   color: lighten($black, 50%);
+// }
+
+// .form {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+// .input {
+//   width: auto;
+//   padding: 10px 8px;
+//   border: 1.5px solid lighten($black, 60%);
+//   border-radius: 4px;
+//   text-align: center;
+//   transition: all .4s linear;
+  
+//   &::placeholder {
+//     opacity: 0.35;
+//   }
+  
+//   &:focus,
+//   &:hover,
+//   &:valid {
+//     outline: none;
+//     border: 1.5px solid lighten($blue, 30%);
+//   }
+// }
+
+// .btn {
+//   padding: 12px 32px;
+//   background-color: $blue;
+//   font-size: 17px;
+//   letter-spacing: 0.5px;
+//   color: $white;
+//   border: none;
+//   border-radius: 6px;
+//   transition: all .4s ease-in-out;
+//   opacity: 0.45;
+//   cursor: pointer;
+  
+//   &--active {
+//     animation: buttonActive .3s both;
+//   }
+  
+//   &--success {
+//     animation: buttonSuccess .4s both;
+//   }
+  
+//   &:focus {
+//     outline: none;
+//   }
+// }
+
+// .subscribe {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   min-width: 625px;
+//   min-height: 465px;
+//   border-radius: 9px;
+//   background-color: $white;
+//   box-shadow: 13px 15px 79px 6px rgba(0,0,0,0.1);
+  
+//   &__image {
+//     position: relative;
+//     max-width: 80px;
+//     margin: 50px 10px 0;
+    
+//     &--success:after {
+//       position: absolute;
+//       top: -6px;
+//       right: -6px;
+//       width: 26px;
+//       height: 26px;
+//       background-image: url('https://user-images.githubusercontent.com/23297041/53911760-6c581880-4068-11e9-90ab-ac45ae3b4aa8.png');
+//       background-size: cover;
+//       content: '';
+//       animation: slideUp .3s ease-out;
+//     }
+//   }
+  
+//   &__text {
+//     max-width: 300px;
+//     margin-bottom: 30px;
+//     text-align: center;
+//   }
+  
+//   &__input {
+//     min-width: 250px;
+//     margin-bottom: 15px;
+//   }
+  
+//   &__btn {
+//     width: 180px;
+//   }
+// }
+
+
+// @keyframes buttonActive {
+//   to {
+//     transform: translateY(-1px);
+//     opacity: 1;
+//   }
+// }
+
+// @keyframes buttonSuccess {
+//   from {
+//     opacity: 1;
+//   }
+//   to {
+//     width: 230px;
+//     background-color: $green;
+//     opacity: 1;
+//   }
+// }
+
+// @keyframes slideUp {
+//   from {
+//     transform: translateY(15px);
+//   }
+// }
+
+// @media screen and (max-width: 680px) {
+//   .subscribe {
+//     min-width: 350px;
+//   }
+// }

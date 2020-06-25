@@ -1,9 +1,30 @@
 @import 'https://use.fontawesome.com/releases/v5.5.0/css/all.css';
 
+@font-face {
+  font-family: 'SF';
+  src: url('./assets/Roboto-Medium.ttf'); /* IE9 Compat Modes */
+}
+
+
+@font-face {
+  font-family: 'Thin';
+  src: url('./assets/Roboto-ThinItalic.ttf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'Momcake-thin';
+  src: url('./assets/MOMCAKE-Thin.otf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'Momcake-bold';
+  src: url('./assets/MOMCAKE-Bold.otf'); /* IE9 Compat Modes */
+}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  color: white;
 }
 
 html,
@@ -54,7 +75,7 @@ h6 {
   display: block;
   clear: both;
   margin: 0 auto 20px;
-  width: 220px;
+  width: 150px;
 }
 
 .px-logo a img {
@@ -65,7 +86,17 @@ h6 {
   display: table;
   width: 100%;
   height: 100%;
-  background: #3F51B5;
+  /* background-image: url('./assets/sign-in-background.jpg'); */
+  background: black;
+  /* background-size: cover; */
+}
+
+@media (max-width: 767px) {
+  .displayTable {
+    background: black;
+    /* background: url('./assets/sign-in-background.jpg') !important;
+    background-size: cover !important; */
+  }
 }
 
 .displayTableCell {
@@ -73,6 +104,9 @@ h6 {
   vertical-align: middle;
   width: 100%;
   height: 100%;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
 }
 
 h3 {
@@ -84,11 +118,13 @@ h3 {
 .authBlock {
   margin: 0 auto;
   max-width: 400px;
-  background: white;
-  padding: 30px 40px 10px;
+  /* background:rgba(50,53,54,0.8267682072829132) 54%;
+  padding: 30px 40px 10px; */
   overflow: hidden;
-  -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, .04);
+  /* -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, .04);
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, .04);
+  border-radius: 10px; */
+
 }
 
 label {
@@ -111,8 +147,9 @@ label {
   border: 2px solid #e7e7e7;
   outline: none;
   font-size: 15px;
-  color: #444444;
-  background: #fcfcfc;
+  color: black;
+    background: white;
+    border-radius: 7px;
 }
 
 .formControl:focus {
@@ -141,7 +178,7 @@ input:-moz-placeholder {
   font-size: 16px;
   font-weight: 600;
   padding: 15px 0;
-  background: #15CD72;
+  background: #fcb103;
   color: #ffffff;
   cursor: pointer;
   outline: none;
@@ -211,7 +248,7 @@ input:-moz-placeholder {
 }
 
 .forgotPassword span {
-  color: #3C89EF;
+  color: #fcb103;;
   font-size: 14px;
   font-weight: 400;
   cursor: pointer;
@@ -653,7 +690,7 @@ body .table thead th {
   }
 
   .displayTable {
-    background: white
+    background: black
   }
 
   .authBlock {
@@ -664,3 +701,15 @@ body .table thead th {
     display: none;
   }
 }
+
+canvas {
+  position: absolute;
+}
+
+/* html:not(.page-loaded) .sidebar {
+  display: block !important;
+}
+
+.sidebar {
+  transform: translateX(120%) !important;
+} */

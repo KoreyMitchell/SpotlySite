@@ -1,1 +1,39 @@
+<head>
+    <link href="https://designmodo.com/slides/app/css/slides.min.css?508341" rel="stylesheet" type="text/css">
+     <!-- Fonts and Material Icons -->
+     <link rel="stylesheet" as="font"
+     href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900|Material+Icons&display=swap" />
+  
+</head>
+  
+  <nav class="panel top">
+    <div class="sections desktop">
+      <div class="left"><a href="#" title="Slides Framework">
+        <h1>Spotly</h1>
+        </a></div>
+      <div class="right">
+        <ul class="menu trim">
+          <li><a class="linkText" href="/">Home</a></li>
+          <!-- <li><a class="linkText" routerLink="/start" routerLinkActive="active">Start</a></li> -->
+          <li><a style="display: none;" class="linkText" routerLink="/sign-in" routerLinkActive="active">Sign-in</a></li>
+          <li class="cropRight"><a class="trimRight shift-up-2" href="http://instagram.com/parkspotly" target="_blank"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use></svg></a></li>
+          <li class="cropRight"><a class="trimRight shift-up-2" href="http://facebook.com/parkspotly" target="_blank"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use></svg></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sections compact hidden">
+      <div class="left"><a href="#" title="Slides Framework">
+      </a></div>
+      <div class="right"><span (click)="openSiderbar()" class="button actionButton sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span></div>
+    </div>
+  </nav>
+
+  <!-- <nav class="side ">
+  <div class="navigation default">
+    <ul></ul>
+  </div>
+</nav> -->
+
+
+ 
 <router-outlet></router-outlet>

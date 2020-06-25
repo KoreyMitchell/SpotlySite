@@ -1,14 +1,20 @@
+<div id="particles-js"></div>
 <div class="displayTable">
   <div class="displayTableCell">
 
     <div class="px-logo">
-      <a href="https://www.positronx.io" target="_blank">
+      <!-- <a href="https://www.positronx.io" target="_blank">
         <img src="https://www.positronx.io/wp-content/themes/positronx/img/logo-positronx-white.svg" alt="positronX.io - Learn Full Stack Development">
-      </a>
+      </a> -->
     </div>
 
     <div class="authBlock">
-      <h3>Sign In</h3>
+      <div class="px-logo">
+        <a href="https://www.parkspotly.com" target="_blank">
+          <img src="../../../assets/logo.png">
+        </a>
+      </div>
+      <h3 style="font-size: 36px;letter-spacing: 1px;padding-bottom: 15px;">Welcome Back!</h3>
       <div class="formGroup">
         <input type="text" class="formControl" placeholder="Username" #userName required>
       </div>
@@ -22,9 +28,9 @@
         <input type="button" class="btn btnPrimary" value="Log in" (click)="authService.SignIn(userName.value, userPassword.value)">
       </div>
 
-      <div class="formGroup">
+      <!-- <div class="formGroup">
         <span class="or"><span class="orInner">Or</span></span>
-      </div>
+      </div> -->
 
       <!-- Calling GoogleAuth Api from AuthService -->
       <div class="formGroup">

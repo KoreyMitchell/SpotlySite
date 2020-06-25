@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angularfirebase-authentication';
+  title = 'spotlysite';
+  openSiderbar() {
+    alert("y");
+    var sidebar = document.getElementById("sidebar");
+    sidebar.style.display = "block !important";
+  }
 }
+
