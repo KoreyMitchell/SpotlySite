@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,15 +7,7 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'spotlysite';
-
-  constructor(private router: Router) {}
-
-  ngOnInit() {
-    this.router.navigate(['/home'])
-  }
   openSiderbar() {
-
-    
  
     var sidebar = document.getElementById("sidebar");
     sidebar.style.display = "block !important";
