@@ -30,8 +30,7 @@
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
-              "src/app/slides.min.js",
-              "src/app/sharethis.js"
+              "src/app/slides.min.js"
             ]
           },
           "configurations": {
